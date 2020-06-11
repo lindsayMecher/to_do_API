@@ -6,7 +6,7 @@ class AuthController < ApplicationController
         # get the user object from the decoded token and verify
         # then render the user
         # user = User.find_by(id: params[:id])
-
+        
         string = request.headers[:Authorization]
         array = string.split(' ')
         token = array[1]
@@ -14,8 +14,11 @@ class AuthController < ApplicationController
         decoded_token = JWT.decode token, my_secret_key, true, { algorithm: 'HS256' }
         user_id = decoded_token[0]["user_id"]
         user = User.find(user_id)
+        
         if user
-            render json: user
+            ordered = user.to_dos.order(created_at: :desc)
+            hash = {user: user, to_dos: ordered}
+            render json: hash
         else
             render json: {error: "invalid token"}, status: 401
         end
