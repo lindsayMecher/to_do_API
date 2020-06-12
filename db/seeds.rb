@@ -16,25 +16,25 @@ user1 = User.create(first_name: "Queen", last_name: "Elizabeth", email: "queen@m
 
 user2 = User.create(first_name: "Margaret", last_name: "Bonds", email: "margaret@me.com", password: "yolo")
 
-todo = ToDo.create(title: "blah", body: "body", importance: "low", user_id: user.id)
+todo = ToDo.create(title: "Wash Dishes", body: "Use sponge", importance: "low", user_id: user.id)
 
-todo1 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user1.id)
+todo1 = ToDo.create(title: "Do Laundry", body: "Use fragrance free detergent", importance: "low", user_id: user1.id)
 
-todo2 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user2.id)
+todo2 = ToDo.create(title: "Do Laundry", body: "Use fragrance free detergent", importance: "low", user_id: user2.id)
 
-todo3 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user1.id)
+todo3 = ToDo.create(title: "Do Laundry", body: "Use fragrance free detergent", importance: "low", user_id: user1.id)
 
-todo4 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user2.id)
+todo4 = ToDo.create(title: "Do Laundry", body: "Use fragrance free detergent", importance: "low", user_id: user2.id)
 
-todo5 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user.id)
+todo5 = ToDo.create(title: "Work Out", body: "Leg day", importance: "medium", user_id: user.id)
 
-todo6 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user1.id)
+todo6 = ToDo.create(title: "Work Out", body: "Leg day", importance: "medium", user_id: user1.id)
 
-todo7 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user2.id)
-todo8 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user.id)
-todo14 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user1.id)
-todo9 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user2.id)
-todo10 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user.id)
-todo11 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user1.id)
-todo12 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user2.id)
-todo13 = ToDo.create(title: "Hello", body: "I'm a message", importance: "high", user_id: user.id)
+todo7 = ToDo.create(title: "Work Out", body: "Leg day", importance: "medium", user_id: user2.id)
+todo8 = ToDo.create(title: "Practice Algorithms", body: "Multiple pointers pattern", importance: "high", user_id: user.id)
+todo14 = ToDo.create(title: "Practice Algorithms", body: "Multiple pointers pattern", importance: "high", user_id: user1.id)
+todo9 = ToDo.create(title: "Practice Algorithms", body: "Multiple pointers pattern", importance: "high", user_id: user2.id)
+todo10 = ToDo.create(title: "Buy soap", body: "Dove Brand", importance: "medium", user_id: user.id)
+todo11 = ToDo.create(title: "Buy soap", body: "Dove Brand", importance: "medium", user_id: user1.id)
+todo12 = ToDo.create(title: "Buy soap", body: "Dove Brand", importance: "medium", user_id: user2.id)
+todo13 = ToDo.create(title: "Water Plants", body: "Use plant food/water mix.", importance: "medium", user_id: user.id)
