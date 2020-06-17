@@ -15,6 +15,19 @@ class ToDosController < ApplicationController
         render json: to_do
     end
 
+    def update
+        to_do = ToDo.find(params[:id])
+        to_do.update(title: params[:title], body: params[:body], importance: params[:importance])
+        render json: to_do
+    end
+
+    def destroy
+        to_do = ToDo.find(params[:id])
+        id = to_do.id
+        to_do.destroy
+        render json: {'message': 'Successfully deleted.'}
+    end
+
 
 
 end
